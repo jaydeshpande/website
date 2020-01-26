@@ -11,10 +11,6 @@ Before moving to Mass, I worked at <a href="https://new.abb.com/uk/about/our-bus
 
 <br>
 
-I started my career as a mechanical engineering with interests in thermal and mechanical modeling, which I quite enjoyed — until I realized that, data and digitalization are rapidly penetrating in the energy business. Data has the power to make energy infrastructure safer, stronger and resilient. Hence, I decided to take a different path!
-
-<br>
-
 I like books, podcasts and cooking. I write about my ideas, experiments and experiences here. I try to send a newsletter every couple of months; if you would like to read more, subscribe maybe?
 
 <br>
