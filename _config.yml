@@ -1,7 +1,7 @@
 # ----------- CONFIGURABLE START -----------
 title:            "Jaydeep's musings"
 description:      "About me"
-url:              https://scribble.muan.co # Site url, without a slash at the end.
+url:              https://jaydeep.info # Site url, without a slash at the end.
 signoff:          "jaydeep" # Your name
 share:            true # Turn on twitter and facebook share buttons
 
