@@ -2,8 +2,8 @@
 title: About me
 ---
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend.
+I am a energy-power professional with interests in energy delivery value chain. I study methods of energy production, storage, transmission, and distribution. My professional experience spans across [Eversource](https://www.eversource.com/){:target="_blank"}, and [Hitachi Energy](https://www.hitachienergy.com/){:target="_blank"}.
 
-Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec egestas ac, volutpat ac nisi.
+Some of my other work around energy-water nexus can be found on [Google Scholar](https://scholar.google.com/citations?user=ggvoStcAAAAJ&hl=en){:target="_blank"}
 
-Find me on [GitHub](https://github.com/muan) or [Twitter](https://twitter.com/muanchiou).
+Find me on [Twitter](https://twitter.com/TheDeshpande){:target="_blank"} or [LinkedIn](https://www.linkedin.com/in/jaydeepdeshpande/){:target="_blank"}
