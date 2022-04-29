@@ -1,22 +1,9 @@
 ---
-layout: page
-title: About
-permalink: /about/
+title: About me
 ---
-Hi! I'm Jaydeep. I'm working on several digitalization challenges in energy industry. I run analytics programs at <a href="https://www.eversource.com/content/general/about">Eversource Energy</a>.
 
-<br>
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend.
 
-Before moving to Mass, I worked at <a href="https://new.abb.com/uk/about/our-businesses/power-grids-division">ABB Power Grids</a>. where I helped build ultra-safe and oil-free distribution transformer for New York City.
+Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec egestas ac, volutpat ac nisi.
 
-<br>
-
-I like books, podcasts and cooking. I write about my ideas, experiments and experiences here. I try to send a newsletter every couple of months; if you would like to read more, subscribe maybe?
-
-<br>
-
-<ul class="social">
-  <li class="logo"><a href="https://twitter.com/TheDeshpande"> <img src="{{ '/twtr.png' | prepend: site.baseurl | prepend: site.url }}"></a></li>
-  <li class="logo"><a href="https://github.com/jaydeshpande"> <img src="{{ '/git.png' | prepend: site.baseurl | prepend: site.url }}"></a></li>
-  <li class="logo"><a href="https://www.linkedin.com/in/jaydeepdeshpande/"> <img src="{{ '/in.png' | prepend: site.baseurl | prepend: site.url }}"></a></li>
-</ul>
+Find me on [GitHub](https://github.com/muan) or [Twitter](https://twitter.com/muanchiou).

@@ -1,47 +1,22 @@
-# Site settings
-title_left    : "Jaydeep"
-title_right   : "Deshpande" # default: ""
-description   : "Journal"
-keywords      : "Jaydeep, Deshpande, JaydeepDeshpande, Blog, Website, Energy, Power, Water"
-url           : "https://jaydeep.info" # site url
-baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
-cover         : "" # image uri like logo/cover image for site seo
+# ----------- CONFIGURABLE START -----------
+title:            "Scribble"
+description:      "Such theme, very cool."
+url:              http://scribble.muan.co # Site url, without a slash at the end.
+signoff:          "muan" # Your name
+facebook_appid:   # APP ID for like button, remove from /_includes/share.html if unwanted.
+google_analytics: # Set tracking, remove from /javascripts/basic.js if unwanted.
+share:            false # Turn on twitter and facebook share buttons
 
-google_analytics  : UA-135617015-1
-twitter_username  : "TheDeshpande"
-comments_enabled  : false # if enabled (set to true), please provide your disqus_username
-disqus_shortname  : ""
-postshare_enabled : true
+links:
+  - name:         Posts
+    url:          /
+    external:     false
+  - name:         About me
+    url:          /about
+    external:     false
+# ------------ CONFIGURABLE END ------------
 
-# Build settings
-permalink   : /:year/:title/
-markdown    : kramdown
-highlighter : rouge
-
-source      : ./
-destination : ./_site
-
-# Sass configuration
-sass:
-  sass_dir  : assets/scss
-  style     : compressed # expanded
-
-# Author settings
-author:
-  name     : "Jaydeep Deshpande"
-
-plugins:
-  - jekyll-sitemap
-  - bourbon
-  - jekyll-paginate
-
-# navbar pages
-navbar:
-  - slug : about
-    title: About
-  - slug : blog
-    title: Blog
-  - slug : subscribe
-    title: Subscribe
-
-exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md", "script"]
+permalink:        /posts/:title
+defaults:
+  - values:
+      layout: "default"
