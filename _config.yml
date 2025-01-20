@@ -6,15 +6,44 @@ signoff:          "jaydeep" # Your name
 share:            true # Turn on twitter and facebook share buttons
 
 links:
-  - name:         Posts
-    url:          /
-    external:     false
   - name:         About me
     url:          /about
     external:     false
+  - name:         Articles
+    url:          /articles
+    external:     false
+  - name:         Books
+    url:          /books
+    external:     false
+  - name:         Clean Tech
+    url:          /cleantech
+    external:     false
+  - name:         Coffee
+    url:          /coffee
+    external:     false
+  - name:         Learning
+    url:          /learning
+    external:     false
+  - name:         Blog
+    url:          /blog
+    external:     false
 # ------------ CONFIGURABLE END ------------
 
-permalink:        /posts/:title
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title
+  coffee:
+    output: true
+    permalink: /coffee/:title
+  cleantech:
+    output: true
+    permalink: /cleantech/:title
+  learning:
+    output: true
+    permalink: /learning/:title
 defaults:
-  - values:
-      layout: "default"
+  - scope:
+      path: "" # Applies to all files
+    values:
+      layout: default
