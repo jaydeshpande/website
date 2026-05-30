@@ -1,0 +1,449 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Jaydeep Deshpande">
+  <header>
+    <h1>Jaydeep Deshpande</h1>
+    <p class="tagline">
+      Energy engineer &middot;
+      <a href="https://www.cfs.energy/">Commonwealth Fusion Systems</a>
+      &middot; Boston
+    </p>
+    <nav aria-label="Page sections">
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#shelf">Curated Reading List</a>
+    </nav>
+    <div class="social">
+      <a href="https://github.com/jaydeshpande">GitHub</a>
+      <a href="https://scholar.google.com/citations?user=ggvoStcAAAAJ&hl=en">Scholar</a>
+      <a href="https://www.linkedin.com/in/jaydeepdeshpande/">LinkedIn</a>
+      <a href="https://twitter.com/TheDeshpande">X</a>
+    </div>
+    <button id="theme-toggle" aria-label="Toggle dark mode">☾ dark</button>
+  </header>
+
+  <main>
+    <figure class="hero-figure">
+      <div class="hero-photo-wrap">
+        <img
+          src="/images/jaydeep.jpg"
+          alt="Jaydeep Deshpande at the Joint European Torus"
+          class="hero-photo"
+          width="1400"
+          height="767"
+        />
+      </div>
+      <figcaption class="hero-caption">Joint European Torus (JET), Culham, UK</figcaption>
+    </figure>
+
+    <section class="about">
+      <p>
+        I work on energy &mdash; how it's produced, stored, and transmitted.
+        Currently at <a href="https://www.cfs.energy/">Commonwealth Fusion Systems</a>,
+        where I spend a lot of time thinking about critical mineral supply chains for bringing fusion to the grid. Before that, 
+        I built and led R&D collaborations with 
+        <a href="https://deepmind.google/blog/bringing-ai-to-the-next-generation-of-fusion-energy/">Google DeepMind</a>, 
+        <a href="https://cfs.energy/news-and-media/commonwealth-fusion-systems-accelerates-commercial-fusion-with-siemens-and-nvidia-leveraging-ai-powered-digital-twins/">NVIDIA</a>, 
+        <a href="https://www.a-star.edu.sg/News/astarNews/news/press-releases/astar-commonwealth-fusion-supply-chain-singapore">A*STAR </a>,
+        and <a href="https://www.differ.nl/news/cfs-differ-2024">DIFFER</a>.
+        <br> </br>
+        Before fusion I worked on power grids at
+        <a href="https://www.hitachienergy.com/">Hitachi Energy</a>
+        and <a href="https://www.eversource.com/">Eversource Energy</a>. 
+        At Eversource I created a novel AI-powered inspection platform, 
+        <a href="https://www.eversource.com/residential/about/our-company/investing-in-innovation/smart-inspect"> SmartInspect </a>.
+        <br> </br>
+        I also build things: simulation solvers, games, apps, and lately, better espresso.
+      </p>
+    </section>
+
+    <!-- =========================================================
+         PROJECTS
+    ========================================================== -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="featured-projects">
+
+        <div class="featured-item">
+          <div class="featured-name">
+            <a href="https://grid-tycoon-c639a.web.app/">Grid Tycoon</a>
+            <span class="tag">JS</span>
+          </div>
+          <div class="featured-desc">
+            I built this because I wanted an interactive way to learn how the grid operates
+            &mdash; the kind of thing you read about in news and books but rarely get to
+            experience directly. Grid Tycoon is a browser-based simulation game where you
+            play as an energy source, participating in grid dispatch. I wanted players to feel the
+            tension between baseload reliability and renewable intermittency without needing
+            an energy economics degree. The game is meant to be an educational tool for developing
+            an appreciation for the energy-power world. 
+          </div>
+        </div>
+
+        <div class="featured-item">
+          <div class="featured-name">
+            <a href="https://www.coffeecrew.app/">Coffee Crew</a>
+            <span class="tag">JS</span>
+          </div>
+          <div class="featured-desc">
+            I built this because I was keeping notes about coffees I'd tried in a messy
+            spreadsheet and wanted something better. Coffee Crew is a tracking and discovery
+            app that lets you log coffees, tasting notes, and roasters, and find what's
+            worth trying next. It started as a personal tool and became something I thought
+            others who take coffee seriously might want.
+          </div>
+        </div>
+
+        <div class="featured-item">
+          <div class="featured-name">
+            <a href="https://github.com/jaydeshpande/multiSpeciesRegionFoam">multiSpeciesRegionFoam</a>
+            <span class="tag">C++</span>
+          </div>
+          <div class="featured-desc">
+            I built this as a research tool for modeling how gases move through multi-region
+            systems &mdash; solids, fluids, and membranes &mdash; in a physically consistent
+            way. The applications I had in mind were membrane desalination and reverse osmosis processes,
+            dehumidification for HVAC, and tritium transport through fusion blankets systems.
+            Built on OpenFOAM 13, the library handles Arrhenius temperature-dependent
+            transport, McNabb&ndash;Foster trapping kinetics, and thermodynamically consistent
+            interface conditions. I released it as an open-source addon because I couldn't
+            find a validated, publicly available solver that covered this combination of
+            physics.
+          </div>
+        </div>
+
+        <div class="featured-item">
+          <div class="featured-name">
+            <a href="https://github.com/jaydeshpande/fresnelvoltaics">fresnelvoltaics</a>
+            <span class="tag">Python</span>
+          </div>
+          <div class="featured-desc">
+            I built this to study concentrated photovoltaic systems that use Fresnel lenses
+            to focus sunlight onto small, high-efficiency solar cells. The core question was
+            how optical design choices &mdash; lens geometry, focal length, acceptance angle
+            &mdash; translate into electrical performance under real-world conditions. I used
+            ray-tracing simulations coupled with cell performance models to map the design
+            space. The work grew directly out of my research on solar concentrators at
+            Virginia Tech and gave me a way to test ideas that didn't fit neatly into a
+            journal paper.
+          </div>
+        </div>
+
+        <div class="featured-item">
+          <div class="featured-name">
+            <a href="https://github.com/jaydeshpande/transformerEM">transformerEM</a>
+            <span class="tag">Python</span>
+          </div>
+          <div class="featured-desc">
+            I built this to model the electromagnetic behavior of distribution transformers
+            &mdash; specifically, to understand how field distributions change under different
+            loading conditions and winding configurations. The tool generates 3D meshes of
+            transformer geometries and runs electromagnetic finite element simulations,
+            producing field maps that lumped-circuit models can't resolve. It came out of
+            work I was doing at Hitachi Energy on transformer design and helped me answer
+            questions about leakage flux and core losses that couldn't be addressed
+            analytically.
+          </div>
+        </div>
+
+        <div class="featured-item">
+          <div class="featured-name">
+            <a href="https://github.com/jaydeshpande/YouTube-Tutorials">YouTube OpenFOAM Tutorials</a>
+            <span class="tag stars">★ 13</span>
+            <span class="tag">C++</span>
+            <span class="tag"><a href="https://www.youtube.com/@foamdude3596">YouTube</a></span>
+          </div>
+          <div class="featured-desc">
+            I built these because learning OpenFOAM from scratch is unnecessarily hard.
+            The documentation is dense, the community forums are scattered, and most
+            tutorials assume you already know what you're doing. I put together a series of
+            step-by-step videos covering case setup, meshing, boundary conditions, and
+            solver selection &mdash; with all case files in a public repository so viewers
+            could follow along and modify. The tutorials have been used by students and
+            engineers in over 40 countries.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         RESEARCH
+    ========================================================== -->
+    <section id="research">
+      <h2>Research</h2>
+
+      <ul class="pub-list">
+        <li>
+          <span class="pub-year">2025</span>
+          <div class="pub-content">
+            <a
+              class="pub-title"
+              href="https://iopscience.iop.org/article/10.1088/1361-6587/adace4"
+            >
+              Accelerating the fusion workforce in the USA
+            </a>
+            <div class="pub-meta">
+              Paz-Soldan, Belonohy, Carter, Deshpande et al.
+              &middot; <em>Plasma Physics and Controlled Fusion</em>
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-year">2025</span>
+          <div class="pub-content">
+            <a class="pub-title" href="https://arxiv.org/abs/2501.03372">
+              Accelerating the fusion workforce
+            </a>
+            <div class="pub-meta">
+              Paz-Soldan et al. &middot; <em>arXiv:2501.03372</em>
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-year">2024</span>
+          <div class="pub-content">
+            <span class="pub-title">
+              US&ndash;UK fusion energy collaborations in the digital space
+            </span>
+            <div class="pub-meta">
+              Parra, Deshpande, Dudson et al.
+              &middot; <em>Lawrence Livermore National Laboratory</em>
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-year">2023</span>
+          <div class="pub-content">
+            <span class="pub-title">
+              Role of Hydrogen in energy transition: opportunities and challenges
+              from technical and economic perspectives
+            </span>
+            <div class="pub-meta">
+              Oudalov, Deshpande, Iliceto et al. &middot; <em>Symposium Cairns</em>
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-year">2019</span>
+          <div class="pub-content">
+            <span class="pub-title">
+              Study of PEM fuel cell end plate design by structural analysis
+              based on contact pressure
+            </span>
+            <div class="pub-meta">
+              Dey, Deshpande, Singdeo, Ghosh
+              &middot; <em>Journal of Energy</em>
+              &middot; 31 citations
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-year">2019</span>
+          <div class="pub-content">
+            <span class="pub-title">Making simulations easy for engineers</span>
+            <div class="pub-meta">
+              Samul, Kobierski, Duc, Deshpande et al.
+              &middot; <em>ABB Review</em>
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-year">2017</span>
+          <div class="pub-content">
+            <span class="pub-title">
+              Analysis and design of direct contact membrane distillation
+            </span>
+            <div class="pub-meta">
+              Deshpande, Nithyanandam, Pitchumani
+              &middot; <em>Journal of Membrane Science</em>
+              &middot; 42 citations
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-year">2017</span>
+          <div class="pub-content">
+            <span class="pub-title">
+              Coupled thermal and optical analysis of a planar waveguide
+              concentrator-receiver
+            </span>
+            <div class="pub-meta">
+              Nithyanandam, Deshpande, Pitchumani
+              &middot; <em>Applied Energy</em>
+              &middot; 6 citations
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-year">2016</span>
+          <div class="pub-content">
+            <span class="pub-title">
+              Investigations on Solar Powered Direct Contact Membrane Distillation
+            </span>
+            <div class="pub-meta">
+              Deshpande &middot; <em>Virginia Tech</em> [Dissertation]
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-year">2014</span>
+          <div class="pub-content">
+            <span class="pub-title">
+              Effect of vibrations on performance of polymer electrolyte
+              membrane fuel cells
+            </span>
+            <div class="pub-meta">
+              Deshpande, Dey, Ghosh
+              &middot; <em>Energy Procedia</em>
+              &middot; 33 citations
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="pub-year">2014</span>
+          <div class="pub-content">
+            <span class="pub-title">
+              Structural analysis of solid oxide fuel cell under externally
+              applied compressive pressure
+            </span>
+            <div class="pub-meta">
+              Dey, Singdeo, Deshpande, Ghosh
+              &middot; <em>Energy Procedia</em>
+              &middot; 12 citations
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <p class="scholar-link">
+        <a href="https://scholar.google.com/citations?user=ggvoStcAAAAJ&hl=en">
+          Full list on Google Scholar &rarr;
+        </a>
+      </p>
+    </section>
+
+    <!-- =========================================================
+         ON MY SHELF
+    ========================================================== -->
+    <section id="shelf">
+      <h2>Curated reading list</h2>
+
+      <div class="reading-block">
+        <h3>Books</h3>
+        <ul class="reading-list">
+          <li>
+            <a href="https://www.amazon.com/World-Sale-Javier-Blas/dp/0190078952">
+              The World for Sale
+            </a>
+            <span class="source">Javier Blas</span>
+          </li>
+          <li>
+            <a href="https://www.amazon.com/Fate-Rome-Climate-Disease-Princeton/dp/0691166838">
+              The Fate of Rome: Climate, Disease, and the End of an Empire
+            </a>
+            <span class="source">Kyle Harper</span>
+          </li>
+          <li>
+            <a href="https://press.stripe.com/pieces-of-the-action">
+              Pieces of the Action
+            </a>
+            <span class="source">Vannevar Bush</span>
+          </li>
+          <li>
+            <a href="https://www.amazon.com/Atomic-Physics-Human-Knowledge-Dover/dp/0486479285">
+              Atomic Physics and Human Knowledge
+            </a>
+            <span class="source">Niels Bohr</span>
+          </li>
+          <li>
+            <a href="https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205">
+              The Hard Thing About Hard Things
+            </a>
+            <span class="source">Ben Horowitz</span>
+          </li>
+          <li>
+            <a href="https://www.amazon.com/Seven-Brief-Lessons-Physics-Rovelli/dp/0399184414">
+              Seven Brief Lessons on Physics
+            </a>
+            <span class="source">Carlo Rovelli</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="reading-block">
+        <h3>Articles</h3>
+        <ul class="reading-list">
+          <li>
+            <a href="https://www.wired.com/story/the-full-story-of-the-stunning-rsa-hack-can-finally-be-told/">
+              The Full Story of the Stunning RSA Hack Can Finally Be Told
+            </a>
+            <span class="source">Wired</span>
+          </li>
+          <li>
+            <a href="https://www.wired.com/story/poker-psychology-uncertainty/">
+              Poker and the Psychology of Uncertainty
+            </a>
+            <span class="source">Wired</span>
+          </li>
+          <li>
+            <a href="https://www.bostonglobe.com/2021/06/22/metro/climate-warms-up-bostons-heat-islands-turn-hot-into-insufferable-with-hardest-hit-neighborhoods-often-those-with-lowest-incomes/">
+              Boston's heat islands turn lower-income neighborhoods from hot to insufferable
+            </a>
+            <span class="source">Boston Globe</span>
+          </li>
+          <li>
+            <a href="https://www.newyorker.com/magazine/2013/07/08/buried-secrets">
+              Buried Secrets
+            </a>
+            <span class="source">The New Yorker</span>
+          </li>
+          <li>
+            <a href="https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge">
+              The Friendship That Made Google Huge
+            </a>
+            <span class="source">The New Yorker</span>
+          </li>
+          <li>
+            <a href="https://www.theatlantic.com/international/archive/2017/08/dunkirk-brexit/536106/">
+              When Britain and France Almost Merged Into One Country
+            </a>
+            <span class="source">The Atlantic</span>
+          </li>
+          <li>
+            <a href="https://fivethirtyeight.com/features/stephen-curry-is-the-revolution/">
+              Stephen Curry Is The Revolution
+            </a>
+            <span class="source">FiveThirtyEight</span>
+          </li>
+          <li>
+            <a href="https://www.nytimes.com/2024/01/17/us/politics/atomic-bomb-secret-funding-congress.html">
+              A Reporter's Journey Into How the U.S. Funded the Bomb
+            </a>
+            <span class="source">New York Times</span>
+          </li>
+          <li>
+            <a href="https://www.newyorker.com/magazine/2022/10/31/toto-wolff-the-compulsive-perfectionist-behind-mercedes-formula-1-team">
+              Toto Wolff, the Compulsive Perfectionist Behind Mercedes's F1 Team
+            </a>
+            <span class="source">The New Yorker</span>
+          </li>
+          <li>
+            <a href="https://www.vanityfair.com/news/life-aboard-a-nuclear-submarine">
+              Life Aboard a Nuclear Submarine
+            </a>
+            <span class="source">Vanity Fair</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="mailto:jaydesh1@gmail.com">jaydesh1@gmail.com</a>
+    &middot;
+    <a href="https://github.com/jaydeshpande">github.com/jaydeshpande</a>
+  </footer>
+</Layout>

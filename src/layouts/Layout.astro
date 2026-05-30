@@ -1,0 +1,55 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Jaydeep Deshpande',
+  description = 'Energy engineer at Commonwealth Fusion Systems. Research in cleantech, renewables, and fusion.',
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content={description} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://jaydeep.info/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://jaydeep.info/og-image.jpg" />
+  <title>{title}</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <!-- Set theme before paint to avoid flash -->
+  <script is:inline>
+    (function () {
+      const stored = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = stored || (prefersDark ? 'dark' : 'light');
+    })();
+  </script>
+</head>
+<body>
+  <slot />
+  <script>
+    const btn = document.getElementById('theme-toggle');
+    function updateLabel() {
+      if (!btn) return;
+      btn.textContent = document.documentElement.dataset.theme === 'dark' ? '☀ light' : '☾ dark';
+    }
+    updateLabel();
+    btn?.addEventListener('click', () => {
+      const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      localStorage.setItem('theme', next);
+      updateLabel();
+    });
+  </script>
+</body>
+</html>
